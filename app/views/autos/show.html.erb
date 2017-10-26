@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<div>
+  <center>
+    <h1><%= @auto.name %></h1>
+    <img src="<%= @auto.img %>" alt="Pancho's car" width=500px>
+  </center>
+  <h3>Marca: <%= @auto.name %></h3>
+  <h3>Modelo: <%= @auto.modelo %></h3>
+  <h3>Year: <%= @auto.year %></h3>
+  <h3>Precio: <%= @auto.precio %></h3>
+</div>
+
+
+
+
+<%= link_to 'Edit', edit_auto_path(@auto) %> |
+<%= link_to 'Back', autos_path %>

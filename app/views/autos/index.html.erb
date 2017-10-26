@@ -1,0 +1,21 @@
+<h1>Pancho's cars</h1>
+<div class="row">
+  <% @autos.each do |auto| %>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="<%= auto.img %>" alt="pancho's cars">
+      <div class="caption">
+        <h3><%= auto.name %></h3>
+        <h3>Cost: <%= auto.precio %></h3>
+        <%= link_to "More info", auto, class: "btn btn-default" %>
+        
+      </div>
+    </div>
+    
+  </div>
+  <% end %>
+</div>
+
+<br>
+
+<%= link_to "New car", new_auto_path, class: "btn btn-default" %>
